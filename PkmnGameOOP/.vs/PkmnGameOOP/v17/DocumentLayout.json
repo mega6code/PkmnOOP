@@ -1,0 +1,76 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mega6_2zcsbcp\\Documents\\GitHub\\PkmnOOP\\PkmnGameOOP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C60FFFD-283E-4A31-800F-0D964EDB4C35}|PkmnGameOOP.csproj|c:\\users\\mega6_2zcsbcp\\documents\\github\\pkmnoop\\pkmngameoop\\playerz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C60FFFD-283E-4A31-800F-0D964EDB4C35}|PkmnGameOOP.csproj|solutionrelative:playerz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C60FFFD-283E-4A31-800F-0D964EDB4C35}|PkmnGameOOP.csproj|c:\\users\\mega6_2zcsbcp\\documents\\github\\pkmnoop\\pkmngameoop\\monsterz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C60FFFD-283E-4A31-800F-0D964EDB4C35}|PkmnGameOOP.csproj|solutionrelative:monsterz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C60FFFD-283E-4A31-800F-0D964EDB4C35}|PkmnGameOOP.csproj|C:\\Users\\mega6_2zcsbcp\\Documents\\GitHub\\PkmnOOP\\PkmnGameOOP\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C60FFFD-283E-4A31-800F-0D964EDB4C35}|PkmnGameOOP.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mega6_2zcsbcp\\Documents\\GitHub\\PkmnOOP\\PkmnGameOOP\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\mega6_2zcsbcp\\Documents\\GitHub\\PkmnOOP\\PkmnGameOOP\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T19:04:16.133Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Playerz.cs",
+              "DocumentMoniker": "C:\\Users\\mega6_2zcsbcp\\Documents\\GitHub\\PkmnOOP\\PkmnGameOOP\\Playerz.cs",
+              "RelativeDocumentMoniker": "Playerz.cs",
+              "ToolTip": "C:\\Users\\mega6_2zcsbcp\\Documents\\GitHub\\PkmnOOP\\PkmnGameOOP\\Playerz.cs",
+              "RelativeToolTip": "Playerz.cs",
+              "ViewState": "AgIAAAUAAADQZ2ZmZuYcwEMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T16:46:38.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Monsterz.cs",
+              "DocumentMoniker": "C:\\Users\\mega6_2zcsbcp\\Documents\\GitHub\\PkmnOOP\\PkmnGameOOP\\Monsterz.cs",
+              "RelativeDocumentMoniker": "Monsterz.cs",
+              "ToolTip": "C:\\Users\\mega6_2zcsbcp\\Documents\\GitHub\\PkmnOOP\\PkmnGameOOP\\Monsterz.cs",
+              "RelativeToolTip": "Monsterz.cs",
+              "ViewState": "AgIAAEkAAACAopmZmZkswFoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T19:05:26.752Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

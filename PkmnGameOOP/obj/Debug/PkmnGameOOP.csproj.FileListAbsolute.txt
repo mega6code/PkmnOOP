@@ -1,0 +1,7 @@
+C:\Users\mega6_2zcsbcp\Documents\GitHub\PkmnOOP\PkmnGameOOP\bin\Debug\PkmnGameOOP.exe.config
+C:\Users\mega6_2zcsbcp\Documents\GitHub\PkmnOOP\PkmnGameOOP\bin\Debug\PkmnGameOOP.exe
+C:\Users\mega6_2zcsbcp\Documents\GitHub\PkmnOOP\PkmnGameOOP\bin\Debug\PkmnGameOOP.pdb
+C:\Users\mega6_2zcsbcp\Documents\GitHub\PkmnOOP\PkmnGameOOP\obj\Debug\PkmnGameOOP.csproj.AssemblyReference.cache
+C:\Users\mega6_2zcsbcp\Documents\GitHub\PkmnOOP\PkmnGameOOP\obj\Debug\PkmnGameOOP.csproj.CoreCompileInputs.cache
+C:\Users\mega6_2zcsbcp\Documents\GitHub\PkmnOOP\PkmnGameOOP\obj\Debug\PkmnGameOOP.exe
+C:\Users\mega6_2zcsbcp\Documents\GitHub\PkmnOOP\PkmnGameOOP\obj\Debug\PkmnGameOOP.pdb

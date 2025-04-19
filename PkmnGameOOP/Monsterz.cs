@@ -93,19 +93,27 @@ namespace PkmnGameOOP
         public override void ReceiveDamage(int damage)
         {
             this.Hp -= damage;
-            if (this.Hp <= 0) { fainted = true; }
+            if (this.Hp <= 0) 
+            {
+                fainted = true;
+                Message.PrintDanger($"{this.Name} has Fainted!");
+                
+            }
         }
 
         public override void Attack(Monster target) 
         {
             if (!this.fainted)
             {
-                //Random random_dmg = new Random();
-                target.ReceiveDamage(new Random().Next(this.Ap));
+                int dmg = RNG.random.Next(this.Ap);
+                Message.PrintWarning($"{this.Name} attacks!");
+                target.ReceiveDamage(dmg);
+                Message.Log($"[{dmg} Damage!]", ConsoleColor.White);
+                Message.PrintDanger($"{target.Name}'s HP is at {target.Hp}/{target.Hp_max}!");
             }
             else
             {
-                Console.WriteLine("Pokemon is not Active yet!");
+                Message.PrintDanger("Pokemon is Fainted!");
 
             }
         }
@@ -113,7 +121,7 @@ namespace PkmnGameOOP
         public void Heal() 
         {
             this.Hp = Hp_max;
-            fainted = false;       
+            fainted = false;     
         }
 
         public override string ToString() 
@@ -124,10 +132,11 @@ namespace PkmnGameOOP
 
         #region Construtorz
 
-        public Pokemon(int speed_inp, string name_inp, int ap_inp, int hp_inp): base(name_inp, ap_inp, hp_inp)
+        public Pokemon(string name_p, int speed_p, int ap_p, int hp_p, Energy type_p): base(name_p, ap_p, hp_p)
         {
             this.fainted = false;
-            this.speed = speed_inp;
+            this.speed = speed_p;
+            this.type = type_p;
             
         }
         #endregion

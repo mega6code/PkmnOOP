@@ -61,14 +61,20 @@ namespace PkmnGameOOP
         }
 
         public Pokemon PickPokemon()
-        { 
+        {
+            pokemon_hspeed = null;
+
             foreach (Pokemon p in pokemon_party)
             {       
-                if (!p.Fainted)
+                if (p.Fainted)
                 {
                     continue;              
                 }
-                else if (p.Speed > pokemon_hspeed.Speed)
+                else if (pokemon_hspeed == null)
+                {
+                    pokemon_hspeed = p;
+                }
+                else if(p.Speed > pokemon_hspeed.Speed)
                 {
                     pokemon_hspeed = p;
                 }
@@ -76,11 +82,27 @@ namespace PkmnGameOOP
                 return pokemon_hspeed;
         }
 
+        public bool PokemonPartyCheck()
+        {
+            foreach (Pokemon p in pokemon_party)
+            {
+                if (p.Fainted == true)
+                {
+                    continue;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public void PrepareBattle(Pokemon enemy)
         {
             ActivateAllPokemons();
             pokemon_target = enemy;
-            pokemon_current_fighter =  PickPokemon();
+            pokemon_current_fighter = PickPokemon();
 
         }
         #endregion

@@ -16,7 +16,10 @@ namespace PkmnGameOOP
         private static char mm_input;
         public static Exception NotReadyYet = new Exception("Sorry, this feature isnt ready yet!");
 
-        
+        public static void UserInput()
+        {
+           mm_input = (Console.ReadLine()[0]);
+        }
 
         public static void MainMenu()
         {
@@ -30,7 +33,7 @@ namespace PkmnGameOOP
                     Message.Log("1 = New Game", ConsoleColor.White);
                     Message.Log("2 = Quit", ConsoleColor.White);
 
-                mm_input = Convert.ToChar(Console.ReadLine());
+                UserInput();             
                 switch (mm_input)
                 {
                     case '1':
@@ -71,14 +74,14 @@ namespace PkmnGameOOP
         public static void BattleMenu()
         { 
 
-            while (!game_over && battle_mode) 
+            while (battle_mode) 
             { 
             Message.PrintDarkGreen(
                 "Menu: \n" +
                 "| A = Attack Oppenent! | S = Stats on Fighters |\n" +
                 "| P = Pokemon Party | R = RUN!!!|\n");
 
-                mm_input = Convert.ToChar(Console.ReadLine());
+                UserInput();
                 switch (mm_input)
                 {
                     case 'A':
@@ -118,7 +121,7 @@ namespace PkmnGameOOP
                 "| L = Look Around | S = Stats on Current Fighter |\n" +
                 "| E = Energies | P = Pokemon Party | Q = Quit |\n");
                 
-            mm_input = Convert.ToChar(Console.ReadLine());
+            UserInput();
             switch (mm_input)
             {
                 case 'L':
@@ -180,13 +183,16 @@ namespace PkmnGameOOP
 
             if(currentPlayer.Pokemon_current_fighter.Fainted == true)
             {
-                currentPlayer.Pokemon_current_fighter = currentPlayer.PickPokemon();
 
-                if (currentPlayer.Pokemon_current_fighter.Fainted == true)
+                
+                if(currentPlayer.PokemonPartyCheck())
+                {
+                    currentPlayer.PickPokemon();               
+                }
+                else 
                 {
                     game_over = true;
                     battle_mode = false;
-                    
                 }
                 
             }
@@ -203,13 +209,13 @@ namespace PkmnGameOOP
 
             if (RNG.random.Next(0, 3) == 2)
             {
-                battle_mode = true;
+                battle_mode = false;
                 Message.PrintDanger("Escaped!");
             }
             else
             {
                 Message.PrintDanger("Could not escape!");
-                Battle();
+                currentPlayer.Pokemon_target.Attack(currentPlayer.Pokemon_current_fighter);
 
             }
         }
